@@ -36,6 +36,7 @@ RUN \
 
 
 RUN curl -Lo panel.tar.gz https://github.com/Pterodactyl/Panel/archive/v0.6.13.tar.gz
+RUN ls -l
 RUN tar --strip-components=1 -xzvf panel.tar.gz 
 RUN rm panel.tar.gz 
 RUN chmod -R 755 storage/* bootstrap/cache 
