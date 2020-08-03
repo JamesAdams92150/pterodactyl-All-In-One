@@ -8,7 +8,7 @@ ENV DAEMON_VERSION=v0.6.13 \
     UID=500
     
 ENV STARTUP_TIMEOUT=5 \
-    PANEL_VERSION=v0.6.13
+    PANEL_VERSION=v0.7.18
 
 WORKDIR /srv/daemon
 
@@ -35,7 +35,7 @@ RUN \
  && mkdir -p /var/www/html /run/nginx
  
 RUN \
- curl -Lo panel.tar.gz https://github.com/Pterodactyl/Panel/archive/${PANEL_VERSION}.tar.gz \
+ curl -Lo panel.tar.gz https://github.com/Pterodactyl/Panel/archive/v0.6.13.tar.gz \
  && tar --strip-components=1 -xzvf panel.tar.gz \
  && rm panel.tar.gz \
  && chmod -R 755 storage/* bootstrap/cache \
