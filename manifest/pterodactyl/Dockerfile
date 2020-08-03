@@ -52,7 +52,7 @@ VOLUME [ "/data" ]
 
 EXPOSE 8080 80 443
 
-ENTRYPOINT [ "/sbin/tini", "--", "/entrypoint.sh" ]
+ENTRYPOINT [ "/sbin/tini", "--", "./entrypoint.sh" ]
 
 CMD [ "p:start" ]
 
