@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM debian:9
 
 MAINTAINER JamesAdams <jamesadams@noemail.com>
 
